@@ -161,7 +161,7 @@ const Home: React.FC = () => {
                     <div className='h-[8.5rem] lg:h-[12rem] pl-8 lg:col-start-3 lg:col-span-2 flex flex-col justify-center bg-[#FFFFFF] shadow-xl  w-6/6 lg:w-2/5 rounded-t rounded-b rounded-r-[25px] relative z-0 ml-[-10px]'>
                         <p className={`${raleway2.className} pb-4`}>Check out our Code of Ethics and Corporate Responsibility here.</p>
                         <div className="flex justify-center">
-                            <Link href="https://latamly.com/etica/" target='_blank'><Button className='bg-[#FF0000] text-[#FFFFFF] shadow-lg text-[0.8rem] lg:text-[1rem] h-6 lg:h-8 w-12 lg:w-16 rounded-full'>
+                            <Link href="https://latamly.com/etica/index2.html" target='_blank'><Button className='bg-[#FF0000] text-[#FFFFFF] shadow-lg text-[0.8rem] lg:text-[1rem] h-6 lg:h-8 w-12 lg:w-16 rounded-full'>
                                 Read
                             </Button></Link>
                         </div>
