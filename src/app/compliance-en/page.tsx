@@ -1,15 +1,13 @@
 "use client"
 import React, { useState } from 'react';
 import style from '@/app/styles/form-compliance.module.css';
-import ImageDropzone from './form-compliance/utils/ImageDropzone';
+import ImageDropzone from '../form-compliance/utils/ImageDropzoneEn';
 import { Button, Image } from "@nextui-org/react";
 import { Raleway } from 'next/font/google';
 import Link from 'next/link';
 
-
 const raleway = Raleway({ subsets: ['latin'], style: 'italic' })
 const raleway2 = Raleway({ subsets: ['latin'] })
-
 
 interface FormDataa {
     nombreYapellido: string;
@@ -142,29 +140,29 @@ const Home: React.FC = () => {
     return (
         <main className={`${style.shape} flex min-h-screen flex-col items-center pb-12`}>
             <div className={`${style.description} container w-3/4 lg:w-1/2 pt-8 pb-8`}>
-                <p className={`${style.textDesc} font-bold`}>Descubre nuestro Código de Ética y Política de Gobierno Corporativo</p>
-                <p className={`${style.textDesc}`}>En Latamly Group entendemos que para cumplir con nuestro Propósito, Misión y Visión como grupo de empresas, debemos actuar de manera inobjetable con Clientes, Socios, Proveedores, Competidores, Inversores y con la Comunidad toda. Para ayudar a lograrlo, contamos con una herramienta fundamental: nuestro Código de Ética y Política de Gobierno Corporativo.</p>
-                <p className={`${style.textDesc}`}>La transparencia y la confianza son valores esenciales para quienes formamos parte de Latamly Group. El cumplimiento de la palabra y la actuación de buena fe en las relaciones contractuales, laborales e institucionales constituyen un compromiso esencial de nuestra corporación. Nuestro Código de Ética y Política de Gobierno Corporativo supone la afirmación de nuestro compromiso para con estos valores y principios.</p>
+                <p className={`${style.textDesc} font-bold`}>Discover our Code of Ethics and Corporate Governance Policy</p>
+                <p className={`${style.textDesc}`}>At Latamly Group, we understand that in order to fulfill our Purpose, Mission, and Vision as a group of companies, we must act impeccably towards Clients, Partners, Suppliers, Competitors, Investors, and the entire Community. To help achieve this, we have a fundamental tool: our Code of Ethics and Corporate Governance Policy.</p>
+                <p className={`${style.textDesc}`}>Transparency and trust are essential values for those of us who are part of Latamly Group. Keeping our word and acting in good faith in contractual, labor, and institutional relationships constitute an essential commitment of our corporation. Our Code of Ethics and Corporate Governance Policy signifies the affirmation of our commitment to these values and principles.</p>
                 <p className={`${style.textDesc}`}>
-                    En Latamly Group estamos convencidos de que contar con un Código de Ética y Política de Gobierno Corporativo lleva al fortalecimiento de una cultura organizacional ética, sólida y sustentable, comprometida con la sustentabilidad y la innovación. Buscamos fomentar y consolidar una cultura corporativa de integridad y cumplimiento normativo, así como prevenir, detectar y responder de manera firme ante potenciales incumplimientos de leyes, regulaciones estatales y/o políticas internas de la empresa.
+                    At Latamly Group, we are convinced that having a Code of Ethics and Corporate Governance Policy leads to the strengthening of an ethical, solid, and sustainable organizational culture, committed to sustainability and innovation. We seek to foster and consolidate a corporate culture of integrity and compliance with regulations, as well as to prevent, detect, and respond firmly to potential violations of laws, state regulations, and/or internal company policies.
                 </p>
                 <p className={`${style.textDesc}`}>
-                    Los responsables máximos por velar por el cumplimiento del Código de Ética y Política de Gobierno Corporativo es el Comité Directivo de la empresa. El Oficial de Cumplimiento (en nuestro caso, dicha función es ejercida por quien tiene a su cargo la Gerencia de Recursos Humanos) constituye la interfaz de comunicación primera para todas las denuncias, descubrimientos y/o reportes vinculados con aspectos detallados en el Código.
+                    The ultimate responsibility for ensuring compliance with the Code of Ethics and Corporate Governance Policy lies with the company&apos;s Management Committee. The Compliance Officer (in our case, this function is carried out by the person in charge of the Human Resources Management) serves as the primary communication interface for all complaints, discoveries, and/or reports related to aspects detailed in the Code.
                 </p>
                 <p className={`${style.textDesc}`}>
-                    Te invitamos a recorrer nuestro Código de Ética y Política de Gobierno Corporativo.
+                    We invite you to explore our Code of Ethics and Corporate Governance Policy.
                 </p>
             </div>
             <div className='pt-4 relative'>
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-0 text-[0.8rem] lg:text-[1.2rem]'>
                     <div className='lg:col-start-2 lg:col-span-1'>
-                        <p className={`${raleway.className} font-raleway bg-[#FF0000] text-white p-6 lg:p-12 rounded-[18px] relative z-10`}>Conocer en profundidad nuestra cultura institucional nos ayuda a alinear mejor nuestros objetivos para crecer hacia donde queremos crecer.</p>
+                        <p className={`${raleway.className} font-raleway bg-[#FF0000] text-white p-6 lg:p-16 rounded-[18px] relative z-10`}>Knowing our institutional culture in depth helps us better align our goals to grow in the direction we want to grow.</p>
                     </div>
-                    <div className='h-[9.5rem] lg:h-[12rem] pl-8 lg:col-start-3 lg:col-span-2 flex flex-col justify-center bg-[#FFFFFF] shadow-xl  w-6/6 lg:w-2/5 rounded-t rounded-b rounded-r-[25px] relative z-0 ml-[-10px]'>
-                        <p className={`${raleway2.className} pb-4`}>Consulta aquí nuestro Código de ética y responsabilidad corporativa.</p>
+                    <div className='h-[8.5rem] lg:h-[12rem] pl-8 lg:col-start-3 lg:col-span-2 flex flex-col justify-center bg-[#FFFFFF] shadow-xl  w-6/6 lg:w-2/5 rounded-t rounded-b rounded-r-[25px] relative z-0 ml-[-10px]'>
+                        <p className={`${raleway2.className} pb-4`}>Check out our Code of Ethics and Corporate Responsibility here.</p>
                         <div className="flex justify-center">
                             <Link href="https://latamly.com/etica/" target='_blank'><Button className='bg-[#FF0000] text-[#FFFFFF] shadow-lg text-[0.8rem] lg:text-[1rem] h-6 lg:h-8 w-12 lg:w-16 rounded-full'>
-                                Leer
+                                Read
                             </Button></Link>
                         </div>
                     </div>
@@ -184,7 +182,7 @@ const Home: React.FC = () => {
                         <div className='col-start-4 col-span-2 pt-16 bg-[#FFFFFF] rounded-t rounded-b rounded-r-[25px]'>
                             <div className='grid cols-1'>
                                 <div className=''>
-                                    <p className={`${raleway.className}text-[1.2rem] lg:text-[2rem]`}>Formulario de denuncia</p>
+                                    <p className={`${raleway.className}text-[1.2rem] lg:text-[2rem] pl-9`}>Complaint Form</p>
                                 </div>
                                 <div className='grid grid-cols-1 gap-4 pl-8 pt-8'>
                                     <Button
@@ -196,7 +194,7 @@ const Home: React.FC = () => {
                                             setBackButton(true);
                                         }}
                                     >
-                                        Enviar denuncia
+                                        Report form
                                     </Button>
 
                                     <Button
@@ -208,14 +206,14 @@ const Home: React.FC = () => {
                                             setBackButton(true);
                                         }}
                                     >
-                                        Enviar denuncia anónima
+                                        Anonymous report form
                                     </Button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 )}
-                                                                                                                        {/*  */}
+
                 {showRegularForm && (
                     <div className='grid grid-cols-2 lg:grid-cols-2 pt-12'>
                         <div className='col-span-2 lg:col-span-1 lg:pl-64 '>
@@ -230,12 +228,12 @@ const Home: React.FC = () => {
                         <div className='col-span-2 lg:col-span-1 pb-8'>
                             <form onSubmit={handleSubmit}>
                                 <div className='pl-8 pt-12 bg-[#FFFFFF] lg:w-3/5 rounded-t rounded-b rounded-r-[25px] relative z-0 ml-[-10px]'>
-                                    <p className={`${raleway.className}text-[1.2rem] lg:text-[2rem]`}>Denuncia</p>
+                                    <p className={`${raleway.className}text-[1.2rem] lg:text-[2rem]`}>Report</p>
                                     <div className="grid grid-cols-2 gap-4">
                                         <div className="col-span-2">
                                             <input className='w-3/4 border-b border-gray-400'
                                                 name='nombreYapellido'
-                                                placeholder='Nombre y apellido'
+                                                placeholder='Name and last name'
                                                 value={formDataa.nombreYapellido}
                                                 onChange={handleName}
                                             />
@@ -243,7 +241,7 @@ const Home: React.FC = () => {
                                         <div className=" lg:col-span-1">
                                             <textarea
                                                 name='descripcion'
-                                                placeholder='Mensaje'
+                                                placeholder='Message'
                                                 value={formDataa.descripcion}
                                                 onChange={handleDescripcion}
                                                 id="message" rows={4} className="block p-2.5 w-full text-sm text-black-900 rounded-lg border border-gray-400 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-gray-400 text-black h-40" />
@@ -254,7 +252,7 @@ const Home: React.FC = () => {
                                                     <ImageDropzone onImageDrop={handleImageDrop} />
                                                 </div>
                                                 <div className="col-span-1 pl-9">
-                                                    <Button type="submit" className='bg-[#FF0000] text-[#FFFFFF] text-[0.8rem] lg:text-[0.8rem] rounded-full w-[4rem] lg:w-[4rem] h-8'>Enviar</Button>
+                                                    <Button type="submit" className='bg-[#FF0000] text-[#FFFFFF] text-[0.8rem] lg:text-[0.8rem] rounded-full w-[4rem] lg:w-[4rem] h-8'>Send</Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -277,30 +275,30 @@ const Home: React.FC = () => {
                             </Image>
                         </div>
                         <form onSubmit={handleSubmit}>
-                        <div className='pl-8 pt-12 bg-[#FFFFFF] lg:w-3/5 rounded-t rounded-b rounded-r-[25px] relative z-0 ml-[-10px]'>
-                                    <p className={`${raleway.className}text-[1.2rem] lg:text-[2rem]`}>Denuncia anónima</p>
-                                    <div className="grid grid-cols-2 gap-4">
-                                        <div className=" lg:col-span-1">
-                                            <textarea
-                                                name='descripcion'
-                                                placeholder='Mensaje'
-                                                value={formDataa.descripcion}
-                                                onChange={handleDescripcion}
-                                                id="message" rows={4} className="block p-2.5 w-full text-sm text-black-900 rounded-lg border border-gray-400 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-gray-400 text-black h-40" />
-                                        </div>
-                                        <div className=" lg:col-span-1">
-                                            <div className='grid grid-cols-1 gap-4'>
-                                                <div className='col-span-1 border border-gray-400 w-32 h-28 rounded-lg pt-1'>
-                                                    <ImageDropzone onImageDrop={handleImageDrop} />
-                                                </div>
-                                                <div className="col-span-1 pl-9">
-                                                    <Button type="submit" className='bg-[#FF0000] text-[#FFFFFF] text-[0.8rem] lg:text-[0.8rem] rounded-full w-[4rem] lg:w-[4rem] h-8'>Enviar</Button>
-                                                </div>
+                            <div className='pl-8 pt-12 bg-[#FFFFFF] lg:w-3/5 rounded-t rounded-b rounded-r-[25px] relative z-0 ml-[-10px]'>
+                                <p className={`${raleway.className}text-[1.2rem] lg:text-[2rem]`}>Anonymous report</p>
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div className=" lg:col-span-1">
+                                        <textarea
+                                            name='descripcion'
+                                            placeholder='Message'
+                                            value={formDataa.descripcion}
+                                            onChange={handleDescripcion}
+                                            id="message" rows={4} className="block p-2.5 w-full text-sm text-black-900 rounded-lg border border-gray-400 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-gray-400 text-black h-40" />
+                                    </div>
+                                    <div className=" lg:col-span-1">
+                                        <div className='grid grid-cols-1 gap-4'>
+                                            <div className='col-span-1 border border-gray-400 w-32 h-28 rounded-lg pt-1'>
+                                                <ImageDropzone onImageDrop={handleImageDrop} />
+                                            </div>
+                                            <div className="col-span-1 pl-9">
+                                                <Button type="submit" className='bg-[#FF0000] text-[#FFFFFF] text-[0.8rem] lg:text-[0.8rem] rounded-full w-[4rem] lg:w-[4rem] h-8'>Send</Button>
                                             </div>
                                         </div>
-
                                     </div>
+
                                 </div>
+                            </div>
                         </form>
                     </div>
 
@@ -317,7 +315,7 @@ const Home: React.FC = () => {
                         </div>
 
                         <div className='h-[9rem] gap-4 lg:h-[12rem] pl-8 pt-12 lg:col-start-2 lg:col-span-2 flex flex-col justify-center bg-[#FFFFFF] w-3/4 lg:w-3/5 rounded-t rounded-b rounded-r-[25px] relative z-0 ml-[-10px]'>
-                            <p className={`${raleway.className}text-[1.2rem] lg:text-[1.5rem]`}>Hemos recibido su denuncia. Muchas gracias.</p>
+                            <p className={`${raleway.className}text-[1.2rem] lg:text-[1.5rem]`}>We have received your report. Thank you very much.</p>
                         </div>
 
                     </div>
@@ -334,7 +332,7 @@ const Home: React.FC = () => {
                         </div>
 
                         <div className='h-[9rem] gap-4 lg:h-[12rem] pl-8 pt-12 lg:col-start-2 lg:col-span-2 flex flex-col justify-center bg-[#FFFFFF] w-3/4 lg:w-3/5 rounded-t rounded-b rounded-r-[25px] relative z-0 ml-[-10px]'>
-                            <p className={`${raleway.className}text-[1.2rem] lg:text-[1.5rem]`}>Ocurrio un error al enviar el formulario. Intentalo mas tarde.</p>
+                            <p className={`${raleway.className}text-[1.2rem] lg:text-[1.5rem]`}>An error occurred while submitting the form. Try again later.</p>
                         </div>
 
                     </div>
@@ -352,7 +350,6 @@ const Home: React.FC = () => {
                             setSelectionButton(true);
                             setSuccessMessage(false);
                             setErrorMessage(false);
-
                         }}>
                         <Image
                             src="/latamly-arrow.png"

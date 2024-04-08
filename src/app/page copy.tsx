@@ -141,8 +141,8 @@ const Home: React.FC = () => {
 
     return (
         <main className={`${style.shape} flex min-h-screen flex-col items-center pb-12`}>
-            <div className={`${style.description} container w-3/4 lg:w-1/2 pt-8 pb-8`}>
-                <p className={`${style.textDesc} font-bold`}>Descubre nuestro Código de Ética y Política de Gobierno Corporativo</p>
+            <div className={`${style.description} container w-1/2 pt-8 pb-8`}>
+                <p className={`${style.textDesc}`}>Descubre nuestro Código de Ética y Política de Gobierno Corporativo</p>
                 <p className={`${style.textDesc}`}>En Latamly Group entendemos que para cumplir con nuestro Propósito, Misión y Visión como grupo de empresas, debemos actuar de manera inobjetable con Clientes, Socios, Proveedores, Competidores, Inversores y con la Comunidad toda. Para ayudar a lograrlo, contamos con una herramienta fundamental: nuestro Código de Ética y Política de Gobierno Corporativo.</p>
                 <p className={`${style.textDesc}`}>La transparencia y la confianza son valores esenciales para quienes formamos parte de Latamly Group. El cumplimiento de la palabra y la actuación de buena fe en las relaciones contractuales, laborales e institucionales constituyen un compromiso esencial de nuestra corporación. Nuestro Código de Ética y Política de Gobierno Corporativo supone la afirmación de nuestro compromiso para con estos valores y principios.</p>
                 <p className={`${style.textDesc}`}>
@@ -156,12 +156,12 @@ const Home: React.FC = () => {
                 </p>
             </div>
             <div className='pt-4 relative'>
-                <div className='grid grid-cols-2 lg:grid-cols-4 gap-0 text-[0.8rem] lg:text-[1.2rem]'>
+                <div className='grid grid-cols-2 lg:grid-cols-4 gap-0'>
                     <div className='lg:col-start-2 lg:col-span-1'>
-                        <p className={`${raleway.className} font-raleway bg-[#FF0000] text-white p-6 lg:p-12 rounded-[18px] relative z-10`}>Conocer en profundidad nuestra cultura institucional nos ayuda a alinear mejor nuestros objetivos para crecer hacia donde queremos crecer.</p>
+                        <p className={`${raleway.className} font-raleway bg-[#FF0000] text-white text-[0.8rem] lg:text-[1.2rem] p-6 lg:p-12 rounded-[18px] relative z-10`}>Conocer en profundidad nuestra cultura institucional nos ayuda a alinear mejor nuestros objetivos para crecer hacia donde queremos crecer.</p>
                     </div>
-                    <div className='h-[9.5rem] lg:h-[12rem] pl-8 lg:col-start-3 lg:col-span-2 flex flex-col justify-center bg-[#FFFFFF] shadow-xl  w-6/6 lg:w-2/5 rounded-t rounded-b rounded-r-[25px] relative z-0 ml-[-10px]'>
-                        <p className={`${raleway2.className} pb-4`}>Consulta aquí nuestro Código de ética y responsabilidad corporativa.</p>
+                    <div className='h-[10rem] lg:h-[12rem] pl-8 lg:col-start-3 lg:col-span-2 flex flex-col justify-center bg-[#FFFFFF] shadow-xl  w-3/4 lg:w-2/5 rounded-t rounded-b rounded-r-[25px] relative z-0 ml-[-10px]'>
+                        <p className={`${raleway2.className}text-[0.8rem] lg:text-[1.2rem] pb-4`}>Código de ética y gobierno corporativo</p>
                         <div className="flex justify-center">
                             <Link href="https://latamly.com/etica/" target='_blank'><Button className='bg-[#FF0000] text-[#FFFFFF] shadow-lg text-[0.8rem] lg:text-[1rem] h-6 lg:h-8 w-12 lg:w-16 rounded-full'>
                                 Leer
@@ -215,7 +215,7 @@ const Home: React.FC = () => {
                         </div>
                     </div>
                 )}
-                                                                                                                        {/*  */}
+
                 {showRegularForm && (
                     <div className='grid grid-cols-2 lg:grid-cols-2 pt-12'>
                         <div className='col-span-2 lg:col-span-1 lg:pl-64 '>
